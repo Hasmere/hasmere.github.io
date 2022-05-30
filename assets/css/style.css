@@ -265,6 +265,10 @@ span.job-title{
     list-style: none;
 }
 
+#affiliations-container p{
+    padding-bottom: 20px;
+}
+
 #affiliations-container li::before {
     content: "•";
     color: #fead20;
