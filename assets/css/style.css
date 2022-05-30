@@ -1,0 +1,309 @@
+/* FONTS - IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@font-face {
+    font-family: Oceanwide;
+    src: url(../fonts/Oceanwide-Semibold.otf);
+}
+
+
+/* =================== */
+/* GENERAL FORMATTING */
+/* =================== */
+html {
+    scroll-behavior: smooth;
+}
+
+.darkbg {
+    background-color: #232533
+}
+
+.lightbg{
+    background-color: #323445
+}
+
+.yellowbg{
+    background-color: #fead20
+}
+
+.side-lines-bg {
+    background-image: url(../images/lines.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.side-arrows-bg {
+    background-image: url(../images/side-arrows.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 20%;
+}
+
+.two-lines-bg {
+    background-image: url(../images/two-lines.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
+}
+
+.rain-bg {
+    background-image: url(../images/rain-bg.png);
+    background-repeat: repeat-y;
+    background-position: bottom right;
+    background-size: 20%;
+}
+
+.vertical-lines-bg{
+    background-image: url(../images/vertical-lines.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 20%;
+}
+
+
+#page-title {
+    padding-top: 3%;
+    font-family: "Oceanwide";
+}
+
+#subheading {
+    font-family: "Oceanwide";
+}
+
+#subheading-2{
+    font-family: "Lato";
+}
+
+.centered-content-vertical{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.centered-content-horizontal{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row li {
+    font-family: "Open Sans";
+    font-size: 12pt;
+    margin-bottom: 3px;
+}
+
+.row p {
+    font-size: 11pt;
+}
+
+
+/* ====================== */
+/*     NAVIGATION BAR     */
+/* ====================== */
+#navigation-bar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation-bar ul li:hover:before {
+    content: "" ;
+    position: absolute;
+    top: 40px;
+    background: #fead20;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    left: 50%;
+    
+}
+
+#navigation-bar .active:after{
+    content: "" ;
+    position: absolute;
+    top: 40px;
+    background: #fead20;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    left: 50%;
+    opacity: 50%;
+}
+
+
+.nav-item{
+    text-align: center;
+    background: #323445;
+    padding-bottom: 5px;
+}
+
+/* ====================== */
+/* ABOUT - LANDING PAGE */
+/* ====================== */
+#about {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 87%;
+    background-color: #323445;
+
+    color: white;
+}
+
+
+#about .first-container{
+    text-align: right;
+    margin-top: 14%;
+}
+
+#about .second-container{
+    width: 100%;
+    text-align: left;
+    margin-top: 14%;
+    padding-left: 2vw;
+    padding-right: 1vw;
+}
+
+#about .third-container{
+    width: 100%;
+    text-align: right;
+    margin-top: auto;
+}
+
+span.description {
+    font-size: 2vh;
+}
+
+span.name {
+    font-size: 40pt;
+    font-family: 'Oceanwide';
+
+}
+
+span.job-title{
+    font-size: 28pt;
+    font-family: 'Lato';
+}
+
+#about p{
+    color:rgb(217, 255, 0);
+}
+
+#about svg:hover{
+    fill: #fead20;
+}
+
+
+/* ====================== */
+/* CONTACT ME - LANDING PAGE */
+/* ====================== */
+#contact {
+    width: 100%;
+    min-height: auto;
+    background: #232533;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    font-size: 11pt;
+}
+
+
+/* ====================== */
+/*     EDUCATION PAGE     */
+/* ====================== */
+#education {
+    width: 100%;
+    min-height: 88%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    background-color: #323445;
+}
+
+#school-logos{
+    width: 85%;
+}
+
+#school-container {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+#school-container ul {
+    list-style: none;
+  }
+
+#school-container li::before {
+    content: "•";
+    color: #fead20;
+}
+
+
+
+/* ====================== */
+/*   AFFILIATIONS PAGE    */
+/* ====================== */
+#affiliations {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: #323445;
+}
+
+#affiliations-logos{
+    width: 85%
+}
+
+#affiliations-container {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+#affiliations-container ul {
+    list-style: none;
+}
+
+#affiliations-container li::before {
+    content: "•";
+    color: #fead20;
+}
+
+
+/* ====================== */
+/*     PROJECTS PAGE      */
+/* ====================== */
+#projects {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    background-color: #323445;
+}
+
+#projects-container{
+    color: white;
+    width: 100%;
+}
+
+#project-container{
+    margin-top: 3vh;
+    margin-left: 3vh;
+    padding-bottom: 3%;
+}
+
+#project-title{
+    font-family: "Lato";
+}
+
+#projects-container ul{
+    list-style: none;
+}
+
+#projects-containerr li::before {
+    content: "• ";
+    color: #fead20;
+}
+
