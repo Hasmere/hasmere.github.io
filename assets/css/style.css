@@ -145,9 +145,8 @@ html {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    min-height: 87%;
+    min-height: 88%;
     background-color: #323445;
-
     color: white;
 }
 
@@ -163,7 +162,7 @@ html {
     margin-top: 14%;
     padding-left: 2vw;
     padding-right: 1vw;
-    padding-bottom: 10%;
+    padding-bottom: 4vw;
 }
 
 #about .third-container{
@@ -173,7 +172,7 @@ html {
 }
 
 span.description {
-    font-size: 2vh;
+    font-size: 12pt;
 }
 
 span.name {
