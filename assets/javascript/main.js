@@ -14,12 +14,15 @@
 
 
 // Back to top - smooth scroll
+const toTop = document.querySelector(".back-to-top");
 jQuery(document).ready(function(){
 	jQuery(window).scroll(function () {
-			if (jQuery(this).scrollTop() > 200) {
+			if (jQuery(this).scrollTop() > 100)   {
+				toTop.classList.add("active");
 				jQuery('.back-to-top').fadeIn();
 			} else {
 				jQuery('.back-to-top').fadeOut();
+				toTop.classList.remove("active");
 			}
 		});
 		
