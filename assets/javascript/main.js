@@ -12,7 +12,21 @@
   });
 })(jQuery);
 
-//image slideshow
-$('.carousel').carousel({
-    interval: 2000
-})
+
+// Back to top - smooth scroll
+jQuery(document).ready(function(){
+	jQuery(window).scroll(function () {
+			if (jQuery(this).scrollTop() > 50) {
+				jQuery('.back-to-top').fadeIn();
+			} else {
+				jQuery('.back-to-top').fadeOut();
+			}
+		});
+		
+		jQuery('.back-to-top').click(function () {
+			jQuery('body, html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+    });
+});
