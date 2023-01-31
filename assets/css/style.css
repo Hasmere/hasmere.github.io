@@ -154,6 +154,7 @@ html {
 
 span.description {
     font-size: 12pt;
+    text-align: justify;
 }
 
 span.name {
@@ -167,9 +168,6 @@ span.job-title{
     font-family: 'Lato';
 }
 
-#about p{
-    color:rgb(217, 255, 0);
-}
 
 #about .btn:hover {
     color: #fead20;
@@ -364,6 +362,11 @@ span.job-title{
     min-width: 90vw !important;
 }
 
+#projects .col{
+    min-width: 300px;
+    padding-bottom: 50px;
+}
+
 
 /* ====================== */
 /*       CARDS PAGE       */
@@ -376,11 +379,11 @@ span.job-title{
 }
 
 .w-70{
-    width: 70% !important;
+    min-width: 70% !important;
 }
 
 .w-30{
-    width: 30% !important;
+    min-width: 30% !important;
 }
 
 /* ====================== */
