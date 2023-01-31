@@ -19,9 +19,9 @@ jQuery(document).ready(function(){
 	jQuery(window).scroll(function () {
 			if (jQuery(this).scrollTop() > 100)  {
 				toTop.classList.add("active");
-				jQuery('.back-to-top').fadeIn();
+				jQuery('.back-to-top.active').fadeIn();
 			} else {
-				jQuery('.back-to-top').fadeOut();
+				jQuery('.back-to-top.active').fadeOut();
 				toTop.classList.remove("active");
 			}
 		});
