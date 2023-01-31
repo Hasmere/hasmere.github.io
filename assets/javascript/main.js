@@ -16,7 +16,7 @@
 // Back to top - smooth scroll
 jQuery(document).ready(function(){
 	jQuery(window).scroll(function () {
-			if (jQuery(this).scrollTop() > 50) {
+			if (jQuery(this).scrollTop() > 200) {
 				jQuery('.back-to-top').fadeIn();
 			} else {
 				jQuery('.back-to-top').fadeOut();
